@@ -1,0 +1,527 @@
+ss
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #616971;
+}
+
+
+/*============= NAVIGATION =============*/
+
+
+
+.navbar-inner {
+	background:transparent;
+}
+
+.navbar-toggler-icon {
+	color: black;
+}
+
+.navbar-toggler {
+	background:#DC4494;
+	
+}
+
+.navbar-brand img {
+	height: 4rem;
+}
+
+.navbar {
+	font-size: 1.20rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	background-color: rgba(0,0,0,0.30);
+}
+
+.nav-link {
+  color: rebeccapurple;
+}
+
+.active {
+	color: darkslateblue;
+	
+}
+
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+  overflow: hidden; 
+}
+
+
+
+
+/*============= CONTENT =============*/
+.text {
+	color: black;
+}
+.container-title {
+ border-radius: 10px;
+ text-align: center;
+ margin: auto;
+ width: 50%;
+ 
+ background-color: rgba(255,250,90,0.83) ;
+ background-position: center;
+ 
+ 
+}
+
+.container-title h1 {
+	font-size: 2.5rem;
+}
+
+
+.container-menu {
+ border-color: aqua;
+ border: thick;
+ position: absolute;
+
+	
+	 
+}
+
+.pinboard {
+	background: url("../img/pinboard.jpg") no-repeat center;
+	background-size: cover; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;  
+    -o-background-size: cover;	
+    overflow: hidden;
+	border-radius: 3px;
+}
+
+.pinboard p {
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 1rem;
+}
+
+.pinboard img {
+	padding: 1rem;
+	padding-bottom: 0;
+	transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+
+#pin img:hover {
+	transform: scale(1.05)
+}
+
+.pinboard h4 {
+   padding: 1rem;
+   padding-bottom: 0;
+   font-size: 1.8rem;
+   border-bottom: 3px solid #222;
+}
+
+
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.about p {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.about img {
+	width: 50%;
+}
+
+/*============= IMAGE GALLERY =============*/
+
+.art-gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 8% 20px 0px 20px;
+	
+}
+
+
+.container-heading {
+	width: 40%;
+	padding-bottom: 1rem;
+}
+
+.container-heading h3 {
+	font-size: 2.5rem;
+	font-weight: bolder;
+	border-bottom: 3px solid #222;
+	padding-bottom: 0.5rem;
+}
+
+.container-heading span {
+	font-weight: 100;
+	
+}
+
+.art-gallery .box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.art-gallery .box .line {
+	display: flex;
+	flex-direction: column;
+	width: 40.5%;	
+
+}
+
+.art-gallery .box .column {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	
+}
+
+.art-gallery .box .line img {
+width: 100%;
+margin-bottom: 1rem;
+margin-top: 0.5rem;
+transition: all 0.4s ease-out;
+cursor: pointer;
+}
+
+
+.art-gallery .box .column img {
+width: 100%;
+margin-bottom: 1rem;
+margin-top: 0.5rem;
+transition: all 0.4s ease-out;
+cursor: pointer;
+}
+
+
+#picture img:hover {
+	transform: scale(1.05);
+	filter: grayscale(60%);
+}
+
+
+
+
+/*===============LIGHTBOXES===============*/
+
+.gallery-lightbox {
+padding-top: 7rem;
+top: 0;
+left: 0;
+position: fixed;
+display: flex;
+width: 100vw;
+height: 100vh;
+background:rgba(0,0,0,0.71);
+color: white;
+justify-content: center;
+text-align: center;
+transform: scale(0,0);
+overflow-y: scroll;
+transition: transform ease-in-out 500ms;
+}
+
+.gallery-lightbox:target {
+transform: scale(1,1);
+
+}
+
+.gallery-lightbox__content {
+	width: 65%;
+	font-size: 1.3rem;
+	padding-bottom: 3rem;
+	position: relative;
+}
+
+.gallery-lightbox__content img {
+    width: 100%;
+	height: auto;
+	margin-bottom: 2rem;
+}
+
+.close {
+	position: absolute;
+	flex: none;
+	width: 1.5em;
+	height: 1.5em;
+	background: #B90003;
+	top: -1em;
+	right: -1em;
+	border-radius: 10%;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.close::after{
+	content: "X";
+	color: white;
+	font-weight: 700;
+	
+}
+
+
+
+
+/*============ CONTACT FORM ==============*/
+
+
+.gradient {
+	
+	
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5), #AD1ED2);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.gradient h1 {
+	color: white;
+	
+}
+
+form {
+	
+	width: 90%;
+	max-width: 600px;
+	
+}
+
+label {
+	color: white;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 10px;
+	cursor: text;
+	transition: 0.2s;
+}
+
+#topform {
+	margin-top: 1.5rem;
+}
+
+#submit{
+ padding: 10px 0;
+ color: white;
+ outline: none;
+ background: transparent;
+ border: 3px solid white;
+ width: 100%;
+ pointer: pointer;
+}
+
+.form-container {
+	margin-top: 6%;
+}
+
+.input-group {
+	margin-bottom: 2rem;
+}
+
+
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: transparent;
+	font-size: 1rem;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+	top: -35px;
+	font-size: 14px;
+	
+}
+
+.division {
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.division .input-group {
+	flex-basis: 48%;
+}
+/*============= MEDIA QUERIES =============*/
+
+
+@media only screen and (max-width: 769){
+	.art-gallery .box {
+	flex-direction: column;
+	}	
+	
+	.art-gallery .box .line {
+		width: 100%;
+	}
+}
+
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+.container-title h1 {
+font-size: 2.5rem;
+}
+	
+.container-heading h3 {
+font-size: 2.5rem;
+}
+	
+.gallery-lightbox__content p {
+font-size: 1.3rem;	
+}
+
+.pinboard {
+	background: url("../img/pinboard2.jpg") no-repeat center;
+	background-size: cover; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;  
+    -o-background-size: cover;	
+    overflow: hidden;
+	border-radius: 3px;
+
+}
+	
+	
+}
+
+@media (max-width: 992px) {	
+.container-title h1 {
+font-size: 2.2rem;
+}	
+
+.container-heading h3 {
+font-size: 2.2rem;
+}
+	
+	
+.gallery-lightbox__content p {
+font-size: 1rem;	
+}
+
+	.pinboard {
+	background: #FCEDC6 ;
+	background-size: cover; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;  
+    -o-background-size: cover;	
+    overflow: hidden;
+	border-radius: 3px;
+
+}
+}
+	
+/* Devices under 767.9px (md) */
+ @media (max-width: 768px) {
+.container-title h1 {
+font-size: 1.8rem;
+}
+	 
+.container-heading h3 {
+font-size: 1.8rem;
+}
+	 
+.gallery-lightbox__content p {
+font-size: 1rem;	
+}
+	 
+.pinboard {
+	background:#FCEDC6;
+	background-size: cover; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;  
+    -o-background-size: cover;	
+    overflow: hidden;
+	border-radius: 3px;
+
+}
+
+/*Devices under 576 (sm) */
+@media (max-width: 576px) {	
+	
+	.container-title h1 {
+	font-size: 1.5rem;
+}
+
+.container-heading h3 {
+font-size: 1.5rem;
+}
+	
+	.pinboard {
+	background:#FCEDC6;
+	background-size: cover; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;  
+    -o-background-size: cover;	
+    overflow: hidden;
+	border-radius: 3px;
+}
+
+.gallery-lightbox__content p {
+font-size: 0.8rem;	
+}
+
+}
+
+ 
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
